@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		820E476F22B0806B00735500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E476E22B0806B00735500 /* AppDelegate.swift */; };
+		820E477122B0806B00735500 /* BibleChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E477022B0806B00735500 /* BibleChapterViewController.swift */; };
+		820E477422B0806B00735500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820E477222B0806B00735500 /* Main.storyboard */; };
+		820E477622B0806D00735500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820E477522B0806D00735500 /* Assets.xcassets */; };
+		820E477922B0806D00735500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820E477722B0806D00735500 /* LaunchScreen.storyboard */; };
+		820E479822B080A700735500 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E478B22B0808A00735500 /* SQLite.framework */; };
+		820E479922B080A700735500 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 820E478B22B0808A00735500 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		820E479E22B080EF00735500 /* bible_cuv.db in Resources */ = {isa = PBXBuildFile; fileRef = 820E479D22B080EF00735500 /* bible_cuv.db */; };
+		820E47A022B080FB00735500 /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E479F22B080FB00735500 /* Bible.swift */; };
+		82DAAB1C22B33F5D000ABA90 /* BibleBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAAB1B22B33F5D000ABA90 /* BibleBookTableViewController.swift */; };
+		82DAAB2522B354C9000ABA90 /* BibleChapterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAAB2422B354C9000ABA90 /* BibleChapterCollectionViewCell.swift */; };
+		82DAAB2722B36090000ABA90 /* BibleVerseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAAB2622B36090000ABA90 /* BibleVerseTableViewController.swift */; };
+		82DAAB2922B36D93000ABA90 /* BibleVerseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAAB2822B36D93000ABA90 /* BibleVerseTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		820E478A22B0808A00735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		820E478C22B0808A00735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		820E478E22B0808A00735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		820E479022B0808A00735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		820E479222B0808A00735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		820E479422B0808A00735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		820E479622B0808A00735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		820E479A22B080A700735500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		820E479C22B080A700735500 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				820E479922B080A700735500 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		820E476B22B0806B00735500 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		820E476E22B0806B00735500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		820E477022B0806B00735500 /* BibleChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleChapterViewController.swift; sourceTree = "<group>"; };
+		820E477322B0806B00735500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		820E477522B0806D00735500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		820E477822B0806D00735500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		820E477A22B0806D00735500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820E478022B0808A00735500 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		820E479D22B080EF00735500 /* bible_cuv.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bible_cuv.db; sourceTree = "<group>"; };
+		820E479F22B080FB00735500 /* Bible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
+		82DAAB1B22B33F5D000ABA90 /* BibleBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBookTableViewController.swift; sourceTree = "<group>"; };
+		82DAAB2422B354C9000ABA90 /* BibleChapterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleChapterCollectionViewCell.swift; sourceTree = "<group>"; };
+		82DAAB2622B36090000ABA90 /* BibleVerseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleVerseTableViewController.swift; sourceTree = "<group>"; };
+		82DAAB2822B36D93000ABA90 /* BibleVerseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleVerseTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		820E476822B0806B00735500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820E479822B080A700735500 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		820E476222B0806B00735500 = {
+			isa = PBXGroup;
+			children = (
+				820E478022B0808A00735500 /* SQLite.xcodeproj */,
+				820E476D22B0806B00735500 /* FinalProject */,
+				820E476C22B0806B00735500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		820E476C22B0806B00735500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				820E476B22B0806B00735500 /* FinalProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		820E476D22B0806B00735500 /* FinalProject */ = {
+			isa = PBXGroup;
+			children = (
+				82DAAB2322B34403000ABA90 /* Supporting Files */,
+				820E477022B0806B00735500 /* BibleChapterViewController.swift */,
+				82DAAB2422B354C9000ABA90 /* BibleChapterCollectionViewCell.swift */,
+				820E477222B0806B00735500 /* Main.storyboard */,
+				82DAAB2822B36D93000ABA90 /* BibleVerseTableViewCell.swift */,
+				82DAAB1B22B33F5D000ABA90 /* BibleBookTableViewController.swift */,
+				82DAAB2622B36090000ABA90 /* BibleVerseTableViewController.swift */,
+				820E479F22B080FB00735500 /* Bible.swift */,
+				820E479D22B080EF00735500 /* bible_cuv.db */,
+				820E477A22B0806D00735500 /* Info.plist */,
+			);
+			path = FinalProject;
+			sourceTree = "<group>";
+		};
+		820E478122B0808A00735500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				820E478B22B0808A00735500 /* SQLite.framework */,
+				820E478D22B0808A00735500 /* SQLiteTests iOS.xctest */,
+				820E478F22B0808A00735500 /* SQLite.framework */,
+				820E479122B0808A00735500 /* SQLiteTests Mac.xctest */,
+				820E479322B0808A00735500 /* SQLite.framework */,
+				820E479522B0808A00735500 /* SQLiteTests tvOS.xctest */,
+				820E479722B0808A00735500 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82DAAB2322B34403000ABA90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				820E476E22B0806B00735500 /* AppDelegate.swift */,
+				820E477522B0806D00735500 /* Assets.xcassets */,
+				820E477722B0806D00735500 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		820E476A22B0806B00735500 /* FinalProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820E477D22B0806D00735500 /* Build configuration list for PBXNativeTarget "FinalProject" */;
+			buildPhases = (
+				820E476722B0806B00735500 /* Sources */,
+				820E476822B0806B00735500 /* Frameworks */,
+				820E476922B0806B00735500 /* Resources */,
+				820E479C22B080A700735500 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				820E479B22B080A700735500 /* PBXTargetDependency */,
+			);
+			name = FinalProject;
+			productName = FinalProject;
+			productReference = 820E476B22B0806B00735500 /* FinalProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		820E476322B0806B00735500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Mike Liu";
+				TargetAttributes = {
+					820E476A22B0806B00735500 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 820E476622B0806B00735500 /* Build configuration list for PBXProject "FinalProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 820E476222B0806B00735500;
+			productRefGroup = 820E476C22B0806B00735500 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 820E478122B0808A00735500 /* Products */;
+					ProjectRef = 820E478022B0808A00735500 /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				820E476A22B0806B00735500 /* FinalProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		820E478B22B0808A00735500 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 820E478A22B0808A00735500 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		820E478D22B0808A00735500 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 820E478C22B0808A00735500 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		820E478F22B0808A00735500 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 820E478E22B0808A00735500 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		820E479122B0808A00735500 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 820E479022B0808A00735500 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		820E479322B0808A00735500 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 820E479222B0808A00735500 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		820E479522B0808A00735500 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 820E479422B0808A00735500 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		820E479722B0808A00735500 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 820E479622B0808A00735500 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		820E476922B0806B00735500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820E477922B0806D00735500 /* LaunchScreen.storyboard in Resources */,
+				820E477622B0806D00735500 /* Assets.xcassets in Resources */,
+				820E477422B0806B00735500 /* Main.storyboard in Resources */,
+				820E479E22B080EF00735500 /* bible_cuv.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		820E476722B0806B00735500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DAAB2722B36090000ABA90 /* BibleVerseTableViewController.swift in Sources */,
+				820E477122B0806B00735500 /* BibleChapterViewController.swift in Sources */,
+				82DAAB2522B354C9000ABA90 /* BibleChapterCollectionViewCell.swift in Sources */,
+				82DAAB1C22B33F5D000ABA90 /* BibleBookTableViewController.swift in Sources */,
+				82DAAB2922B36D93000ABA90 /* BibleVerseTableViewCell.swift in Sources */,
+				820E476F22B0806B00735500 /* AppDelegate.swift in Sources */,
+				820E47A022B080FB00735500 /* Bible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		820E479B22B080A700735500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 820E479A22B080A700735500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		820E477222B0806B00735500 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820E477322B0806B00735500 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		820E477722B0806D00735500 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820E477822B0806D00735500 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		820E477B22B0806D00735500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		820E477C22B0806D00735500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		820E477E22B0806D00735500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58K3S6QX64;
+				INFOPLIST_FILE = FinalProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Mike-Liu.FinalProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		820E477F22B0806D00735500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58K3S6QX64;
+				INFOPLIST_FILE = FinalProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Mike-Liu.FinalProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		820E476622B0806B00735500 /* Build configuration list for PBXProject "FinalProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820E477B22B0806D00735500 /* Debug */,
+				820E477C22B0806D00735500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820E477D22B0806D00735500 /* Build configuration list for PBXNativeTarget "FinalProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820E477E22B0806D00735500 /* Debug */,
+				820E477F22B0806D00735500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 820E476322B0806B00735500 /* Project object */;
+}
